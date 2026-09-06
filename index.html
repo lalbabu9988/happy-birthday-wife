@@ -52,9 +52,11 @@ margin-top:30px;
 }
 
 .heart{
-position:absolute;
+position:fixed;
+top:100px;
 color:red;
 animation:fall linear infinite;
+z-index:999;
 }
 
 @keyframes fall{
@@ -121,7 +123,7 @@ heart.innerHTML="❤️";
 
 heart.className="heart";
 
-heart.style.left=(Math.random()*40+30)+"%";
+heart.style.left=Math.random()*100+"%";  
 heart.style.fontSize=
 (Math.random()*30+20)+"px";
 
