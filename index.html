@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday ❤️</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:linear-gradient(45deg,#ff758c,#ff7eb3);
+overflow:hidden;
+font-family:Arial;
+text-align:center;
+color:white;
+}
+
+h1{
+margin-top:80px;
+font-size:60px;
+animation:glow 2s infinite;
+}
+
+@keyframes glow{
+50%{
+text-shadow:0 0 20px white;
+}
+}
+
+.message{
+font-size:24px;
+width:80%;
+margin:auto;
+line-height:1.8;
+}
+
+button{
+padding:15px 40px;
+font-size:20px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4081;
+cursor:pointer;
+margin-top:30px;
+}
+
+#surprise{
+display:none;
+font-size:35px;
+margin-top:30px;
+}
+
+.heart{
+position:absolute;
+color:red;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+}
+100%{
+transform:translateY(100vh);
+}
+}
+
+img{
+width:250px;
+border-radius:20px;
+box-shadow:0 0 20px white;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎂 Happy Birthday My Love ❤️</h1>
+
+wife.jpg
+
+<div class="message">
+
+My Dear Wife,
+
+Every day with you is a blessing.
+
+Thank you for filling my life with happiness,
+love and beautiful memories.
+
+Today is your special day,
+and I want you to know that
+I love you more than words can express.
+
+💖
+
+</div>
+
+<button onclick="showLove()">
+Click For Surprise
+</button>
+
+<div id="surprise">
+💍 I Will Love You Forever ❤️
+</div>
+
+<script>
+
+function showLove(){
+document.getElementById("surprise").style.display="block";
+}
+
+for(let i=0;i<60;i++){
+
+let heart=document.createElement("div");
+
+heart.innerHTML="❤️";
+
+heart.className="heart";
+
+heart.style.left=Math.random()*100+"%";
+
+heart.style.fontSize=
+(Math.random()*30+20)+"px";
+
+heart.style.animationDuration=
+(Math.random()*5+3)+"s";
+
+document.body.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
